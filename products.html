@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | E-commerce website</title>
+    <title>All Products - RedStore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ------- header ------- -->
-    <div class="header">
+    <!-- ------- Navbar------- -->
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -26,41 +25,20 @@
                 <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart">
                 <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Workout <br> A New Style!</h1>
-                    <p>
-                        Success isn't always about greateness. It's about consistency. Consistence <br> hard work gains success. Greateness will come.
-                    </p>
-                    <button>Explore Now &#8594;</button>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png" alt="hero-image"> 
-                </div>
-            </div>
         </div>
-    </div>
 
-    <!-- featured categories -->
-     <div class="categories">
-        <div class="small-container">
-            <div class="row featured">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" alt="">
-                </div>
-            </div>
-        </div>
-     </div>
-
-     <!-- -------- featured Products -------- -->
+     <!-- --------Products -------- -->
       <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option value="">Default sorting</option>
+                <option value="">sort by price</option>
+                <option value="">sort by popularity</option>
+                <option value="">sort by rating</option>
+                <option value="">sort by sale</option>
+            </select>
+        </div>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="">
@@ -82,11 +60,6 @@
                 <h4>Red Printed T-Shirt</h4>
                 <p>$50.00</p>
             </div>
-        </div>
- 
-          <!-- --------- latest product ----------- -->
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
@@ -128,91 +101,15 @@
                 <p>$50.00</p>
             </div>
         </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
       </div>
-
-      <!-- ------ offer ----- -->
-       <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png"  alt="" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusive Available on RedStore</p>
-                    <h1>Smart Band 4</h1>
-                    <small>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nostrum aut sequi excepturi doloribus alias. Laudantium porro voluptate vitae maiores, facilis iste fugit beatae ea.
-                    </small>
-                    
-                    <p>
-                        <button>Buy Now &#8594;</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-       </div>
-
-
-     <!-- ------ testimonial ------- -->
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ducimus pariatur ut! Vel rerum eius provident! Laudantium repellendus quibusdam similique.
-                    </p>
-                    <div class="rating">
-                        + + + + +
-                    </div>
-                    <img src="images/user-1.png" alt="user1">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ducimus pariatur ut! Vel rerum eius provident! Laudantium repellendus quibusdam similique.
-                    </p>
-                    <div class="rating">
-                        + + + + +
-                    </div>
-                    <img src="images/user-2.png" alt="user-2">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ducimus pariatur ut! Vel rerum eius provident! Laudantium repellendus quibusdam similique.
-                    </p>
-                    <div class="rating">
-                        + + + + +
-                    </div>
-                    <img src="images/user-3.png" alt="user-3">
-                    <h3>Sean Parker</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ----------- brands ------- -->
-     <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png" alt="logo-godrej">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png" alt="logo-oppo">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png" alt="logo-coca-cola">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png" alt="logo-paypal">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png" alt="logo-philips">
-                </div>
-            </div>
-        </div>
-     </div>
 
      <!-- ------ footer ------ -->
       <div class="footer">
