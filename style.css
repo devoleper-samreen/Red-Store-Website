@@ -14,7 +14,7 @@ body{
 
 .container{
     max-width: 1100px;
-    min-width: 350px;
+    /* min-width: 350px; */
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -47,10 +47,13 @@ nav ul{
         a{
             text-decoration: none;
             color: #555;
+
+            &:hover{
+                color: #ff523b;
+            }
         }
     }
 }
-
 
 /* ------- hero -------- */
 .row{
@@ -364,6 +367,61 @@ select{
     }
 }
 
+/* ******* single product detaile page ***** */
+.single-product{
+    margin-top: 50px;
+
+    h4{
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    select{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    input{
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: 1px solid #ff523b;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .col-2{
+        padding: 20px;
+
+        img{
+            padding: 0;
+        }
+    }
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+
+    .small-img-col{
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+}
+
+.more{
+    cursor: pointer;
+
+    &:hover{
+        color: #ff523b;
+    }
+}
 /* ---------- media query for menu ------ */
 
 @media screen and (min-width: 801px){
@@ -405,25 +463,15 @@ select{
 
 /* for less than 600px */
 @media screen and (max-width: 600px){
-    .container {/**/
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
     .header .row {
         margin-top: 20px;
     }
 
-    button {
-        padding: 10px 20px;
-    }/**/
     .row{
         text-align: center;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
-        text-align: center;/**/
-
     }
 
     .col-4, .featured{
@@ -432,6 +480,22 @@ select{
             height: 380px;
         }
         
+    }
+
+    .single-product{
+
+        .row{
+            text-align: left;
+        }
+
+        .col-2{
+            padding: 20px 0;
+        }
+
+        h1{
+            font-size: 26px;
+            line-height: 32px;
+        }
     }
     
 }
